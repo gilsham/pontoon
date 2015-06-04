@@ -1,0 +1,1046 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fun",
+				"function"
+			],
+			[
+				"cfq",
+				"cfqueryparam	Tag (cmfl)"
+			],
+			[
+				"form_",
+				"form_field"
+			],
+			[
+				"app",
+				"application"
+			],
+			[
+				"page",
+				"pageList"
+			],
+			[
+				"Http",
+				"httpStatusCode"
+			],
+			[
+				"VAR",
+				"variables"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"set",
+				"setZoom"
+			],
+			[
+				"contain",
+				"container"
+			],
+			[
+				"so",
+				"sortBox"
+			],
+			[
+				"conta",
+				"container〔variable〕"
+			],
+			[
+				"var",
+				"variables"
+			],
+			[
+				"va",
+				"variables	var (cfscript)"
+			],
+			[
+				"dis",
+				"display_value"
+			],
+			[
+				"static_segment",
+				"static_segment_members_addJSON"
+			],
+			[
+				"seg",
+				"segments"
+			],
+			[
+				"sub",
+				"subscribeResponse"
+			],
+			[
+				"me",
+				"method=\"post\"	method"
+			],
+			[
+				"box-sha",
+				"box-shadow"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"date",
+				"dateCompare	fn. (cfscript)"
+			],
+			[
+				"DateC",
+				"dateCompare	fn. (cfscript)"
+			],
+			[
+				"con",
+				"condition	@condition"
+			],
+			[
+				"heading",
+				"heading_object"
+			],
+			[
+				"se",
+				"section	<section>"
+			],
+			[
+				"d",
+				"directory	@directory"
+			],
+			[
+				"inp",
+				"input-group"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"a",
+				"action=\"create\"	action"
+			],
+			[
+				"base",
+				"base_path"
+			],
+			[
+				"dir",
+				"directoryExists	fn. (cfscript)"
+			],
+			[
+				"cfv",
+				"cfsqltype=\"cf_sql_varchar\"	cfsqltype"
+			],
+			[
+				"name",
+				"nameField"
+			],
+			[
+				"email",
+				"emailField"
+			],
+			[
+				"fiel",
+				"field_list"
+			],
+			[
+				"fie",
+				"field_list"
+			],
+			[
+				"out",
+				"output=\"false\"	output"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"ex",
+				"expires"
+			],
+			[
+				"over",
+				"overflow"
+			],
+			[
+				"arti",
+				"article"
+			],
+			[
+				"start",
+				"start_date"
+			],
+			[
+				"on",
+				"onchange	@onchange"
+			],
+			[
+				"edit",
+				"edit_page_id"
+			],
+			[
+				"cf",
+				"cfqueryparam"
+			],
+			[
+				"page_obj",
+				"page_obj_id"
+			],
+			[
+				"cfquery",
+				"cfqueryparam"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"In",
+				"International"
+			],
+			[
+				"Se",
+				"Secondary"
+			],
+			[
+				"test",
+				"testPageID"
+			],
+			[
+				"ListCo",
+				"listContains	fn. (cfscript)"
+			],
+			[
+				"la",
+				"log_account"
+			],
+			[
+				"for",
+				"form	<form>"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"first",
+				"first_name"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"ca",
+				"carousel_more_hover"
+			],
+			[
+				"rem",
+				"removeClassName"
+			],
+			[
+				"image",
+				"imageCount"
+			],
+			[
+				"hasC",
+				"hasClassName"
+			],
+			[
+				"ob",
+				"observe"
+			],
+			[
+				"box",
+				"border-box-sizing	border-box-sizing"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"cfel",
+				"cfelseif	Tag (cmfl)"
+			],
+			[
+				"fieldse",
+				"fieldset"
+			],
+			[
+				"key",
+				"keywords"
+			],
+			[
+				"ti",
+				"title	<title>"
+			],
+			[
+				"isd",
+				"isDefined	fn. (cfscript)"
+			],
+			[
+				"cf_sql",
+				"cf_sql_varchar"
+			],
+			[
+				"meta",
+				"meta_information"
+			],
+			[
+				"c",
+				"cfqueryparam"
+			],
+			[
+				"temp",
+				"template"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"disp",
+				"display"
+			],
+			[
+				"pro",
+				"product_detail"
+			],
+			[
+				"template",
+				"templateOptions"
+			],
+			[
+				"tem",
+				"templateOptions"
+			],
+			[
+				"ty",
+				"type=\"integer\"	type"
+			],
+			[
+				"data",
+				"datasource"
+			],
+			[
+				"sour",
+				"source_sans_pro"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"conten",
+				"content"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"sear",
+				"search_bg"
+			],
+			[
+				"sea",
+				"search_bg"
+			],
+			[
+				"google_",
+				"google_map"
+			],
+			[
+				"format",
+				"format_address"
+			],
+			[
+				"lo",
+				"longitude"
+			],
+			[
+				"lat",
+				"latatude"
+			],
+			[
+				"whit",
+				"white-space"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"DIS",
+				"distinct"
+			],
+			[
+				"prod",
+				"product_id"
+			],
+			[
+				"page_",
+				"page_obj_id"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"grid",
+				"grid_menu"
+			],
+			[
+				"feat",
+				"features"
+			],
+			[
+				"border-w",
+				"border-width"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"rel",
+				"related_list"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"nth",
+				"nth-o	nth-omega()"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"nor",
+				"normal"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"record",
+				"recordcount"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"im",
+				"img	img"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"pr",
+				"products"
+			],
+			[
+				"buy",
+				"buy_link"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"min",
+				"min-height"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "merg",
+		"selected_items":
+		[
+			[
+				"merg",
+				"Sublimerge: Show Unsaved Changes"
+			],
+			[
+				"merge",
+				"Sublimerge: Show Unsaved Changes"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ali",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"comb",
+				"Run CSScomb"
+			],
+			[
+				"beua",
+				"HTMLBeautify"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"rev",
+				"Permute Lines: Reverse"
+			],
+			[
+				"up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 514.0
+	},
+	"console":
+	{
+		"height": 316.0,
+		"history":
+		[
+			"id()",
+			"active_window()",
+			"windows()",
+			"__dir__()",
+			"self.parent.title",
+			"ctypes.windll.kernel32.SetConsoleTitleA(\"Manuka Health\")",
+			"ctypes.windll.kernel32.SetConsoleTitle(\"Manuka Health\")",
+			"system(\"Manuka Health\")",
+			"from os import system",
+			"ctypes.windll.kernel32.SetConsoleTitleA(\"Manuka Health\")",
+			"import ctypes",
+			"$Host.UI.RawUI.WindowTitle = \"test\"",
+			"Side_Bar",
+			"Side_bar",
+			"sidebar",
+			"sidebarEnhancements.side_bar_files_open_with_edit_applications",
+			"sidebarWnhancements.side_bar_files_open_with_edit_applications",
+			"side_bar_files_open_with_edit_applications"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/U/inetpub/wwwroot/bikesnrides/cms/build_page.cfm",
+		"/Y/lic_international/plugins/jackbox/js/jackbox-packed.min.js",
+		"/U/inetpub/wwwroot/bikesnrides/js/script.js",
+		"/Y/trt/js/external.js",
+		"/Y/trt/cms/contact.cfm",
+		"/Y/trt/cms/menu.cfm",
+		"/Y/trt/web.config",
+		"/Y/trt/cms/articles_list.cfm",
+		"/Y/trt/cms/email_friend.cfm",
+		"/Y/trt/cms/form.cfm",
+		"/Y/trt/cms/build_form.cfm",
+		"/Y/trt/cms/login.cfm",
+		"/Y/trt/cms/manage_account.cfm",
+		"/Y/trt/cms/product_detail.cfm",
+		"/Y/trt/cms/purchase_history.cfm",
+		"/Y/trt/cms/submit_form.cfm",
+		"/Y/trt/cms/mailchimp_Add.cfm",
+		"/Y/trt/viewobj.cfm",
+		"/Y/trt/edit/form_field_options.cfm",
+		"/Y/trt/edit/form_fields.cfm",
+		"/Y/trt/cms/build_form_fields.cfm",
+		"/Y/trt/cms/feature.cfm",
+		"/Y/trt/cms/footer.cfm",
+		"/Y/trt/cms/home.cfm",
+		"/Y/trt/cms/search_pages.cfm",
+		"/Y/trt/cms/cfc/menu.cfc",
+		"/Y/trt/cms/catalogue_master.cfm",
+		"/Y/trt/cms/checkout_step1.cfm",
+		"/Y/trt/cms/article_detail.cfm",
+		"/Y/trt/cms/cfc/cms.cfc",
+		"/Y/trt/cms/page.cfm",
+		"/Y/trt/edit/cfc/webConfig.cfc",
+		"/Y/trt/edit/articles.cfm",
+		"/Y/trt/application.cfc",
+		"/Y/trt/cms/right_menu.cfm",
+		"/Y/trt/robots.txt",
+		"/Y/trt/cms/page_pre_processing.cfm",
+		"/Y/trt/cms/httpStatusCode.cfm",
+		"/Y/trt/cms/links.cfm",
+		"/Y/trt/cms/right_feature.cfm",
+		"/Y/trt/cms/obj_file.cfm",
+		"/Y/trt/404.cfm",
+		"/Y/trt/cms/catalogue.cfm",
+		"/Y/trt/cms/catalogue_list.cfm",
+		"/Y/trt/cms/checkout_step3.cfm",
+		"/Y/trt/cms/checkout_step4.cfm",
+		"/Y/trt/cms/checkout_step5.cfm",
+		"/Y/trt/cms/articles.cfm",
+		"/Y/trt/cms/page_title.cfm",
+		"/Y/trt/cms/photo_gallery.cfm",
+		"/Y/trt/cms/product_cat.cfm",
+		"/Y/trt/cms/slide_show.cfm",
+		"/Y/trt/cms/text.cfm",
+		"/Y/trt/cms/staff.cfm",
+		"/Y/trt/css/cms.css",
+		"/Y/trt/js/theme.plugins.js",
+		"/Y/trt/css/style.css",
+		"/Y/trt/js/theme.js",
+		"/Y/trt/css/custom.css",
+		"//192.168.20.101/web/trt/cms/articles_list.cfm",
+		"/Y/sweetpea/cms/content.cfm",
+		"/Y/sweetpea/edit/templates.cfm",
+		"/Y/moanui/edit/shop.cfm",
+		"/Y/moanui/cms/products.cfm",
+		"/Y/sweetpea/css/style.css",
+		"/Y/trt/cms/site_map.cfm",
+		"/Y/trt/cms/site_map_build.cfm",
+		"/C/Users/BenGuy/AppData/Roaming/Sublime Text 3/Packages/Sublimerge Pro/Default (Windows).sublime-keymap",
+		"/C/Users/BenGuy/AppData/Roaming/Sublime Text 3/Packages/Sublimerge Pro/Custom Comparisons.sublime-settings",
+		"/C/Users/BenGuy/AppData/Roaming/Sublime Text 3/Packages/Sublimerge Pro/Sublimerge.sublime-settings",
+		"/C/Users/BenGuy/AppData/Roaming/Sublime Text 3/Packages/User/FileDiffs.sublime-settings",
+		"/C/Users/BenGuy/AppData/Roaming/Sublime Text 3/Packages/FileDiffs/FileDiffs.sublime-settings",
+		"/Y/sweetpea/edit/carousel.cfm",
+		"/Y/sweetpea/cms/home.cfm",
+		"/Y/sweetpea/cms/page_slider.cfm",
+		"/Y/sweetpea/cms/homeFeatures.cfm",
+		"/Y/rtlb_cluster_20/travel_form.cfm",
+		"/Y/rtlb_cluster_20/travel.cfm",
+		"/Y/rtlb_cluster_20/admin_travel.cfm",
+		"/Y/sweetpea/css/custom.css",
+		"/Y/sweetpea/cms/right_feature.cfm",
+		"/Y/sweetpea/cms/show_menu.cfm",
+		"/Y/sweetpea/cms/product_cat.cfm",
+		"/Y/sweetpea/cms/products.cfm",
+		"/Y/sweetpea/cms/page.cfm",
+		"/Y/sweetpea/cms/build_page.cfm",
+		"/Y/trt/js/plugins.js",
+		"//192.168.20.101/web/trt/js/script.js",
+		"/Y/rtlb_cluster_38/lsf_form.cfm",
+		"/Y/rtlb_cluster_38/lsf_list.cfm",
+		"/Y/rtlb_cluster_38/lsf_update.cfm",
+		"/Y/rtlb_cluster_7/lsf_list.cfm",
+		"/Y/rtlb_cluster_7/lsf_form.cfm",
+		"/Y/rtlb_cluster_7/lsf_update.cfm",
+		"/Y/rtlb_cluster_14/lsf_form.cfm",
+		"/Y/rtlb_cluster_14/lsf_list.cfm",
+		"/Y/rtlb_cluster_14/lsf_update.cfm",
+		"/Y/rtlb_cluster_11/lsf_list.cfm",
+		"/Y/rtlb_cluster_11/lsf_update.cfm",
+		"/Y/rtlb_cluster_11/lsf_form.cfm",
+		"/Y/rtlb_cluster_12/lsf_form.cfm",
+		"/Y/rtlb_cluster_12/lsf_list.cfm",
+		"/Y/rtlb_cluster_12/lsf_update.cfm",
+		"/Y/rtlb_cluster_6/lsf_update.cfm",
+		"/Y/rtlb_cluster_6/lsf_form.cfm",
+		"/Y/rtlb_cluster_6/lsf_list.cfm",
+		"/Y/rtlb_cluster_12/lsf_update.cfm.orig",
+		"/Y/rtlb_cluster_4/lsf_form.cfm",
+		"/Y/rtlb_cluster_4/lsf_list.cfm",
+		"/Y/rtlb_cluster_4/lsf_update.cfm",
+		"/Y/rtlb_cluster_4/lsf_other.cfm",
+		"/C/Users/BenGuy/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"//192.168.20.101/web/rtlb_cluster_4/lsf_form.cfm",
+		"//192.168.20.101/web/rtlb_cluster_4/lsf_list.cfm",
+		"//192.168.20.101/web/rtlb_cluster_4/lsf_update.cfm",
+		"//192.168.20.101/web/rtlb_change/read me.cfm",
+		"/Y/epilepsynz/css/bootstrap-theme.css",
+		"/Y/rtlb_cluster_40/referral_defaults.cfm",
+		"/Y/rtlb_cluster_40/referral_update.cfm",
+		"/Y/rtlb_cluster_40/referral_form.cfm",
+		"/Y/rtlb_cluster_40/referral_list.cfm",
+		"/Y/rtlb_cluster_39/referral_defaults.cfm",
+		"/Y/rtlb_cluster_39/referral_update.cfm",
+		"/Y/rtlb_cluster_39/referral_form.cfm",
+		"/Y/rtlb_cluster_39/referral_list.cfm",
+		"/Y/rtlb_cluster_38/project_defaults.cfm",
+		"/Y/rtlb_cluster_38/project_form.cfm",
+		"/Y/rtlb_cluster_38/project_list.cfm"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 92.0,
+		"where_history":
+		[
+			"\\\\192.168.20.101\\web\\trt\\cms",
+			"\\\\192.168.20.101\\web\\sweetpea\\edit",
+			"\\\\192.168.20.101\\web\\trt\\css",
+			"\\\\192.168.20.101\\web\\trt\\js",
+			"Y:\\epilepsynz\\css,",
+			"Y:\\epilepsynz\\css,*.txt",
+			"Y:\\epilepsynz\\css",
+			"Y:\\epilepsynz\\js",
+			"Y:\\epilepsynz\\css",
+			"",
+			"Y:\\hcs",
+			"<open folders>",
+			"",
+			"U:\\inetpub\\wwwroot\\manuka_health\\cms",
+			"C:\\Documents and Settings\\Dennis\\Application Data\\Sublime Text 3",
+			"C:\\Documents and Settings\\Dennis\\Application Data\\Sublime Text 3\\Packages\\SideBarEnhancements"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"open",
+			"inputty",
+			"add",
+			"back\"",
+			"back",
+			"\\?article_",
+			"viewobj",
+			"view",
+			"img.+src=\"(img|images)",
+			"images",
+			"cfargument",
+			"<cfargument required=\"true\" name=\"xmlWebConfig\">",
+			"right",
+			"trt_story",
+			"article_id=",
+			"article_id",
+			"id=\"search",
+			"id=\"keywords",
+			"keywords",
+			"menu",
+			"IY",
+			"admin",
+			"type",
+			"IY",
+			"body:",
+			"\\.mobile[^_]",
+			"to-mob",
+			"variables.type",
+			".mobile ",
+			".mobile",
+			"html.mobile",
+			"mobile",
+			"\\\"mobile\\\"",
+			"\"mobile\"",
+			"html",
+			"body.mobile",
+			"target",
+			"type of",
+			"cfparam",
+			"img",
+			"typeLists",
+			"addMarker",
+			"mailchi",
+			"email =",
+			"email",
+			"mailc",
+			"radio",
+			"table",
+			"cold",
+			"show",
+			"artic",
+			"article",
+			"tab-cont",
+			"tab_cont",
+			"tab",
+			".trigger",
+			"trigger",
+			";\n",
+			"title",
+			"article",
+			"main_title",
+			"fancy",
+			"gallery_item",
+			"DPSsuccess",
+			"#side",
+			".carousel-wrapper.row",
+			"#side",
+			".section.with-carousel",
+			"meta.tag.inline",
+			"subscri",
+			"301",
+			"\\[(-\\d+\\.\\d+),\\s?(\\d+\\.\\d+)\\],?",
+			"crm 22",
+			"crm 51",
+			"crm 73",
+			"crm 51",
+			"\\[(-\\d+\\.\\d+),\\s?(\\d+\\.\\d+)\\],?",
+			"\\[(-\\d+\\.\\d+,\\s?\\d+\\.\\d+)\\],?",
+			"rms",
+			"\\[(-\\d+\\.\\d+,\\s?\\d+\\.\\d+)\\],?",
+			",\\s",
+			"\\[(-\\d+\\.\\d+,\\s?\\d+\\.\\d+)\\],?",
+			"\\[(-\\d+\\.\\d+,\\d+\\.\\d+)\\],?",
+			"\\[(-\\d+\\.\\d+,\\d+\\.\\d+)\\]",
+			"\\[(-\\d+\\.\\d+,\\d+\\.\\d+)\\],?",
+			"\\[(-(?:\\d+\\.\\d+)),(?:\\d+\\.\\d+))\\],",
+			"],",
+			"]",
+			"[",
+			"errors",
+			"show right",
+			"show right hand menu",
+			"field",
+			"error",
+			"<cfif isdefined('URL.test')>",
+			"cftext",
+			"cert",
+			"feature",
+			"arrow",
+			"check_pro",
+			"buy",
+			"images",
+			"&",
+			"sea",
+			"gimp",
+			"highligh",
+			"shipping"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"html.mobile_view",
+			"html.mobile",
+			"\\1,\\2\\n",
+			"\\1\\n",
+			",",
+			"\\1\\n",
+			"\\n",
+			"",
+			"../img",
+			"img"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 147.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pontoon.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Documents and Settings\\Dennis\\Desktop\\projects\\sweetpea.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 285.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
