@@ -2,6 +2,10 @@ class Card
 	constructor: (@suit, @rank) ->
 		@visible = false
 
+	show: () ->
+		@visible = true
+		return
+
 
 Suits = [
 	'Heart'
