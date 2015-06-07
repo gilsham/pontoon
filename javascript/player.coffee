@@ -1,3 +1,5 @@
 class Player
-	constructor: (@name,@hand) ->		@hands = []
+	constructor: (@name,hand,@money) ->
+
+		@hands = []
 		@hands.push hand
