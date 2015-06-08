@@ -3,3 +3,4 @@ class Player
 
 		@hands = []
 		@hands.push hand
+		@actions = Pontoon.actions

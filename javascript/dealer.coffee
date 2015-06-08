@@ -1,8 +1,9 @@
 class Dealer extends Player
-	constructor: (name, hand, @deck) ->
-		super(name, hand)
+	constructor: (name, hand, money, @deck) ->
+		super(name, hand, money)
 
 		return @
+
 	deal: (number = 1) ->
 		cards = []
 		if @deck.remaining < number
