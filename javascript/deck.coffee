@@ -1,17 +1,17 @@
 class Deck
-	constructor: (decks = 1) ->
+	constructor: (packs = 1,jokers = false) ->
 		@cards = []
 		@discarded = []
-		while (decks -= 1) + 1
+		for [0...packs]
 			for suit in Suits
 				for rank in Ranks
 					@cards.push new Card(suit,rank)
 
 		@shuffle()
+		@remaining = @cards.length
 
 	shuffle: () ->
-		i = @cards.length
-		while i -= 1
+		for i in [(@cards.length - 1)...0]
 			temp = @cards[i]
 			swapIndex = Math.floor(Math.random() * i)
 			@cards[i] = @cards[swapIndex]
@@ -20,7 +20,12 @@ class Deck
 		return
 
 	deal: () ->
+		@remaining = @remaining = @cards.length
 		return @cards.pop()
+
+	burn: (number = 1) ->
+		for [0...number]
+			@discarded.push @deal()
 
 	discard: (card) ->
 		@discarded.push card
@@ -28,4 +33,10 @@ class Deck
 
 	addCards: (cards) ->
 		@cards.push cards
+		@remaining = @remaining = @cards.length
 		return
+
+	reshuffle: () ->
+		@addCards(@discarded)
+		@discarded = []
+		@shuffle
