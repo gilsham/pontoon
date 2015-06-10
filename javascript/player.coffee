@@ -1,6 +1,5 @@
 class Player
-	constructor: (@name,hand,@money) ->
+	constructor: (@name,@money) ->
 
 		@hands = []
-		@hands.push hand
-		@actions = Pontoon.actions
+		@active = true

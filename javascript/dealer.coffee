@@ -1,6 +1,6 @@
 class Dealer extends Player
-	constructor: (name, hand, money, @deck) ->
-		super(name, hand, money)
+	constructor: (name, money, @deck) ->
+		super(name, money)
 
 		return @
 
@@ -13,3 +13,5 @@ class Dealer extends Player
 		
 		for [0...number]
 				cards.push @deck.deal()
+
+		return cards

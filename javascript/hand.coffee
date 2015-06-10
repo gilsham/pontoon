@@ -3,8 +3,8 @@ class Hand
 		@cards = []
 		@playable = false
 
-	addCard: (card) ->
-		@cards.push card
+	addCard: (cards) ->
+		if cards instanceof Card then @cards.push cards else @cards = @cards.concat cards
 		return
 
 	discardCard: (removeCard = @cards[0]) ->
@@ -13,5 +13,8 @@ class Hand
 
 		return @cards
 
+	show: () ->
+		for card in @cards
+			card.show()
 
 

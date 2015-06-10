@@ -1,6 +1,38 @@
 class Pontoon extends Game
-	constructor: (@dealer, players, @minBet = 1, @maxBet) ->
+	constructor: (@dealer, players, @minBet = 1, @maxBet = 100) ->
+		include Player,
+			action: Pontoon.actions
+
+		reinit = (player) => if player == @dealer then @dealer = new Dealer(player.name,player.money,new Deck 3) else new Player(player.name,player.money)
+		players = (reinit player for player in players)
+
 		super(players)
+
+	start: () =>
+		while( @activePlayers() > 1)
+			@startRound()
+		return
+
+	activePlayers: () ->
+		return (player for player in @players when player.active).length
+
+	startRound: () ->
+		if @dealer.deck.length < @activePlayers() * 5
+			@dealer.deck.reshuffle()
+
+		for [0...2]
+			for player in @players 
+				if not player.playingHand
+					player.hands.push(player.playingHand = new Hand())
+
+				player.playingHand.addCard @dealer.deal()
+
+		for player in @players when player != @dealer
+			while player.active
+				for action in player::actions when action.canDo.call(player)
+					window.createElement('button').onclick = action.do.call(player)
+
+		return
 
 	@cardValue: (card) ->
 		switch card.rank
@@ -16,47 +48,48 @@ class Pontoon extends Game
 
 	@actions: 
 		declare: new Action(
-			(hand) ->
-				for card in hand.cards
+			() ->
+				for card in @playingHand.cards
 					if card.rank == 'Ace'
 						card.show()
-			(hand) ->
+			() ->
 				return (
-						hand.length < 3 &&
+						@playingHand.length < 3 &&
 						(
-							(hand.cards[0].rank == 'Ace' && @cardValue(hand.cards[1]) == 10) ||
-							(hand.cards[1].rank == 'Ace' && @cardValue(hand.cards[0]) == 10)
+							(@playingHand.cards[0].rank == 'Ace' && @cardValue(@playingHand.cards[1]) == 10) ||
+							(@playingHand.cards[1].rank == 'Ace' && @cardValue(@playingHand.cards[0]) == 10)
 						)
 					)
 		)
 
 		split: new Action(
 			() ->
-				for card in @cards
-					card.show()
+				@playingHand.show()
 
-				newHand = new Hand(@cards[0],@bet)
-				@money -= @bet
+				newHand = new Hand(@playingHand.cards[0],@playingHand.bet)
+				@money -= @playingHand.bet
 				@hands.push newHand
-				hand.cards.removeCard()
-				hand.playable = false
+				@playingHand.cards.removeCard()
+				@playingHand.playable = false
 
 				for hand in @hands
 					if not hand.playable
 						hand.addCard @dealer.deal()
 			() ->
 				return (
-					@cards.length < 3 &&
-					@cards[0].rand == @cards[1].rank
+					@playingHand.cards.length < 3 &&
+					@playingHand.cards[0].rand == hand.cards[1].rank
+
 				)
 		)
 
 		buy: new Action(
 			() ->
 
+
 			() ->
 				value = 0
-				value += Pontoon.cardValue(card)[0] for card in @cards
-				return @cards.length < 5 && value < 21 && @
+				value += Pontoon.cardValue(card)[0] for card in @playingHand.cards
+				return @playingHand.cards.length < 5 && value < 21 && @money > @playingHand.betRange.min
 
 		)

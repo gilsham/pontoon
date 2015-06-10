@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<script src="javascript/libs.js"></script>
 	<script src="javascript/card.js"></script>
 	<script src="javascript/deck.js"></script>
 	<script src="javascript/hand.js"></script>
@@ -10,6 +11,19 @@
 	<script src="javascript/ai.js"></script>
 	<script src="javascript/action.js"></script>
 	<script src="javascript/pontoon.js"></script>
+	<script>
+
+	var players = [
+		new Player('Bob',2000)
+	,	new Player('Moot',2000)
+	,	new Player('Sam',2000)
+	,	new Player('Greg',3000)
+	];
+
+	window.game = new Pontoon(players[0],players);
+	game.start();
+
+	</script>
 </head>
 <body>
 </body>
