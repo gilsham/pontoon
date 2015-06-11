@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="javascript/libs.js"></script>
 	<script src="javascript/card.js"></script>
 	<script src="javascript/deck.js"></script>
@@ -14,13 +15,13 @@
 	<script>
 
 	var players = [
-		new Player('Bob',2000)
-	,	new Player('Moot',2000)
-	,	new Player('Sam',2000)
-	,	new Player('Greg',3000)
+		{name: 'Bob', money: 2000}
+	,	{name: 'Moot', money: 2000}
+	,	{name: 'Sam', money: 2000}
+	,	{name: 'Greg', money: 3000}
 	];
 
-	window.game = new Pontoon(players[0],players);
+	window.game = new Pontoon('Bob',players);
 	game.start();
 
 	</script>

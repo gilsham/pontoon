@@ -3,3 +3,5 @@ class Player
 
 		@hands = []
 		@active = true
+
+		$('<div>').data('name',@name)

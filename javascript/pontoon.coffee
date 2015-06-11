@@ -1,17 +1,17 @@
 class Pontoon extends Game
-	constructor: (@dealer, players, @minBet = 1, @maxBet = 100) ->
+	constructor: (dealer, playerDetails, @minBet = 1, @maxBet = 100) ->
 		include Player,
-			action: Pontoon.actions
+			actions: Pontoon.actions
 
-		reinit = (player) => if player == @dealer then @dealer = new Dealer(player.name,player.money,new Deck 3) else new Player(player.name,player.money)
-		players = (reinit player for player in players)
+		reinit = (player) => if player.name == dealer then @dealer = new Dealer(player.name,player.money,new Deck 3) else new Player(player.name,player.money)
+		players = (reinit player for player in playerDetails)
 
 		super(players)
 
-	start: () =>
-		while( @activePlayers() > 1)
-			@startRound()
-		return
+	start: () ->
+		
+		@startRound()
+		
 
 	activePlayers: () ->
 		return (player for player in @players when player.active).length
@@ -28,9 +28,9 @@ class Pontoon extends Game
 				player.playingHand.addCard @dealer.deal()
 
 		for player in @players when player != @dealer
-			while player.active
-				for action in player::actions when action.canDo.call(player)
-					window.createElement('button').onclick = action.do.call(player)
+			
+				for name, action of player.actions when action.canDo.call(player)
+					button = $('button').onclick = action.do.call(player).text(name).appendTo(window)
 
 		return
 
@@ -76,11 +76,9 @@ class Pontoon extends Game
 					if not hand.playable
 						hand.addCard @dealer.deal()
 			() ->
-				return (
+				return
 					@playingHand.cards.length < 3 &&
-					@playingHand.cards[0].rand == hand.cards[1].rank
-
-				)
+					@playingHand.cards[0].rand == @playingHand.cards[1].rank
 		)
 
 		buy: new Action(
