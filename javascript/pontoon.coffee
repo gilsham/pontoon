@@ -3,6 +3,9 @@ class Pontoon extends Game
 		include Player,
 			actions: Pontoon.actions
 
+		include Hand,
+			betRange: () => Pontoon.betRange.call(this)
+
 		reinit = (player) => if player.name == dealer then @dealer = new Dealer(player.name,player.money,new Deck 3) else new Player(player.name,player.money)
 		players = (reinit player for player in playerDetails)
 
@@ -30,7 +33,7 @@ class Pontoon extends Game
 		for player in @players when player != @dealer
 			
 				for name, action of player.actions when action.canDo.call(player)
-					button = $('button').onclick = action.do.call(player).text(name).appendTo(window)
+					button = $('<button>').click(action.do.call(player)).text(name).appendTo(player.board)
 
 		return
 
@@ -45,6 +48,9 @@ class Pontoon extends Game
 				return [10]
 
 			else return NaN
+
+	@betRange: (hand) ->
+		{min: @minBet}
 
 	@actions: 
 		declare: new Action(
@@ -76,9 +82,7 @@ class Pontoon extends Game
 					if not hand.playable
 						hand.addCard @dealer.deal()
 			() ->
-				return
-					@playingHand.cards.length < 3 &&
-					@playingHand.cards[0].rand == @playingHand.cards[1].rank
+				@playingHand.cards.length < 3 && @playingHand.cards[0].rand == @playingHand.cards[1].rank
 		)
 
 		buy: new Action(
@@ -86,8 +90,15 @@ class Pontoon extends Game
 
 
 			() ->
+				@actions.twist.canDo.call(@) && @money >= @playingHand.betRange(@playingHand).min
+
+		)
+
+		twist: new Action(
+			() ->
+
+			() ->
 				value = 0
 				value += Pontoon.cardValue(card)[0] for card in @playingHand.cards
-				return @playingHand.cards.length < 5 && value < 21 && @money > @playingHand.betRange.min
-
+				@playingHand.cards.length < 5 && value <= 21
 		)
