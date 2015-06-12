@@ -4,4 +4,8 @@ class Player
 		@hands = []
 		@active = true
 
-		$('<div>').data('name',@name)
+		@board = $('<div>').text(@name).data('name',@name).css({border:'1px solid #000',padding:'0.5em'})
+		$(() => $('#stuff').append @board; return)
+		return @
+
+	updateBoard: () ->
