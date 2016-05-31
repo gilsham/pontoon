@@ -102,3 +102,9 @@ class Pontoon extends Game
 				value += Pontoon.cardValue(card)[0] for card in @playingHand.cards
 				@playingHand.cards.length < 5 && value <= 21
 		)
+
+		stand: new Action(
+			() ->
+
+			() -> true
+		)

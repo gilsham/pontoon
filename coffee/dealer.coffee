@@ -10,8 +10,8 @@ class Dealer extends Player
 			@deck.reshuffle()
 			if @deck.remaining < number
 				throw "Not enough cards"
-		
+
 		for [0...number]
-				cards.push @deck.deal()
+			cards.push @deck.deal()
 
 		return cards
