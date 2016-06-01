@@ -12,9 +12,9 @@ class Pontoon extends Game
 		super(players)
 
 	start: () ->
-		
+
 		@startRound()
-		
+
 
 	activePlayers: () ->
 		return (player for player in @players when player.active).length
@@ -24,17 +24,26 @@ class Pontoon extends Game
 			@dealer.deck.reshuffle()
 
 		for [0...2]
-			for player in @players 
+			for player in @players
 				if not player.playingHand
 					player.hands.push(player.playingHand = new Hand())
 
 				player.playingHand.addCard @dealer.deal()
 
 		for player in @players when player != @dealer
-			
+
 				for name, action of player.actions when action.canDo.call(player)
 					button = $('<button>').click(action.do.call(player)).text(name).appendTo(player.board)
 
+		@update()
+
+		return
+
+	update: () ->
+		for player in @players
+			for hand in player.hands
+				for card in hand.cards
+					player.board.append( card.draw() )
 		return
 
 	@cardValue: (card) ->
@@ -52,7 +61,7 @@ class Pontoon extends Game
 	@betRange: (hand) ->
 		{min: @minBet}
 
-	@actions: 
+	@actions:
 		declare: new Action(
 			() ->
 				for card in @playingHand.cards
