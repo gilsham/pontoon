@@ -42,7 +42,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-javascript/*.js
-*.js
+node_modules/*
 prepros.cfg
-pontoon.sublime-workspace
+*.sublime-workspace
+jsconfig.json
+*.log
+main.js
+javascript/*
+*.map
+*.css
