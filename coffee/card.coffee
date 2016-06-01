@@ -6,6 +6,20 @@ class Card
 		@visible = true
 		return
 
+	draw: () ->
+		output = $("<div class='card " + if @visible then @suit + " " + @rank else "" + "'></div>")
+		switch
+			when $.isNumeric( @rank )
+				output.append('<div>').class('number').text(@rank).clone()
+				for 1...parseInt( @rank, 10 )
+					output.append("<div>").addClass('symbol')
+			when @rank in ['Ace','Jack','Queen','King']
+				rankLetter = @rank.slice(0,1)
+				output.append('<div>').class('number').text(@rankLetter).clone()
+				output.append("<div>").addClass('symbol')
+
+		return output
+
 
 Suits = [
 	'Heart'
