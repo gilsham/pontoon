@@ -3,8 +3,8 @@ class Deck
 		@cards = []
 		@discarded = []
 		for [0...packs]
-			for suit in Suits
-				for rank in Ranks
+			for suit in Card.Suits
+				for rank in Card.Ranks
 					@cards.push new Card(suit,rank)
 
 		@shuffle()

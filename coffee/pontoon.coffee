@@ -32,8 +32,9 @@ class Pontoon extends Game
 
 		for player in @players when player != @dealer
 
-				for name, action of player.actions when action.canDo.call(player)
-					button = $('<button>').click(action.do.call(player)).text(name).appendTo(player.board)
+			player.playingHand.show()
+			for name, action of player.actions when action.canDo.call(player)
+				button = $('<button>').click(action.do.call(player)).text(name).appendTo(player.board)
 
 		@update()
 
@@ -43,7 +44,7 @@ class Pontoon extends Game
 		for player in @players
 			for hand in player.hands
 				for card in hand.cards
-					player.board.append( card.draw() )
+					player.board.append( card.showen )
 		return
 
 	@cardValue: (card) ->

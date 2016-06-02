@@ -1,8 +1,290 @@
 .card {
-	height: 90px;
-	width: 30px;
+	height: 180px;
+	width: 120px;
+	display: inline-block;
+	border: 1px solid cornflowerblue;
+	border-radius: 5px;
+	position: relative;
+	color: black;
 
-	&.heart .symbol{
-		background: red;
+	.symbol{
+		background: black;
+		height: 20px;
+		width: 20px;
+		display: block;
+		border: 1px solid;
+		margin-left: -10px;
+		margin-top: -10px;
+	}
+
+	&.Heart,&.Diamond {
+		color: red;
+
+		.symbol{
+			background: red;
+		}
+	}
+
+	* {
+		position: absolute;
+
+		&.flipped{
+			transform: rotate(0.5turn);
+		}
+	}
+
+	&.hidden{
+		background: url(../img/cardBack.png);
+	}
+
+	.number:first-child {
+		top: 5px;
+		left: 5px;
+	}
+
+	.number:last-child {
+		bottom: 5px;
+		right: 5px;
+	}
+
+	&.rAce, &.rJack, &.rQueen, &.rKing{
+		.symbol{
+			width: 50px;
+			height: 50px;
+			margin-left: -25px;
+			margin-top: -25px;
+			top: 50%;
+			left: 50%;
+		}
+	}
+
+	&.r2{
+		.symbol{
+			left: 50%;
+
+			&:nth-child(2){
+				top: 33%;
+			}
+
+			&:nth-child(3){
+				top: 66%;
+			}
+		}
+	}
+
+	&.r3{
+		.symbol{
+			left: 50%;
+
+			&:nth-child(2){
+				top: 25%;
+			}
+
+			&:nth-child(4){
+				top: 75%;
+			}
+		}
+	}
+
+	&.r4{
+		.symbol{
+			left: 25%;
+			top: 25%;
+
+			&:nth-child(3),
+			&:nth-child(5){
+				left: 75%;
+			}
+
+			&:nth-child(4),
+			&:nth-child(5){
+				top: 75%;
+			}
+		}
+	}
+
+	&.r5{
+		.symbol{
+			left: 25%;
+			top: 25%;
+
+			&:nth-child(4){
+				left: 50%;
+				top: 50%;
+			}
+
+			&:nth-child(3),
+			&:nth-child(6){
+				left: 75%;
+			}
+
+			&:nth-child(5),
+			&:nth-child(6){
+				top: 75%;
+			}
+		}
+	}
+
+	&.r6{
+		.symbol{
+			left: 25%;
+			top: 25%;
+
+			&:nth-child(3),
+			&:nth-child(5),
+			&:nth-child(7){
+				left: 75%;
+			}
+
+			&:nth-child(4),
+			&:nth-child(5){
+				top: 50%;
+			}
+
+			&:nth-child(6),
+			&:nth-child(7){
+				top: 75%;
+			}
+		}
+	}
+
+	&.r7{
+		.symbol{
+			left: 25%;
+			top: 25%;
+
+			&:nth-child(4){
+				left: 50%;
+				top: 33%;
+			}
+
+			&:nth-child(3),
+			&:nth-child(6),
+			&:nth-child(8){
+				left: 75%;
+			}
+
+			&:nth-child(5),
+			&:nth-child(6){
+				top: 50%;
+			}
+
+			&:nth-child(7),
+			&:nth-child(8){
+				top: 75%;
+			}
+		}
+	}
+
+	&.r8{
+		.symbol{
+			left: 25%;
+			top: 25%;
+
+			&:nth-child(4){
+				top: 33%;
+			}
+
+			&:nth-child(7){
+				top: 66%;
+			}
+
+			&:nth-child(4),
+			&:nth-child(7){
+				left: 50%;
+			}
+
+			&:nth-child(3),
+			&:nth-child(6),
+			&:nth-child(9){
+				left: 75%;
+			}
+
+			&:nth-child(5),
+			&:nth-child(6){
+				top: 50%;
+			}
+
+			&:nth-child(8),
+			&:nth-child(9){
+				top: 75%;
+			}
+		}
+	}
+
+	&.r9{
+		.symbol{
+			left: 25%;
+			top: 20%;
+
+			&:nth-child(3),
+			&:nth-child(5),
+			&:nth-child(8),
+			&:nth-child(10){
+				left: 75%;
+			}
+
+			&:nth-child(4),
+			&:nth-child(5){
+				top: 40%;
+			}
+
+			&:nth-child(6){
+				top: 50%;
+				left: 50%;
+			}
+
+			&:nth-child(7),
+			&:nth-child(8){
+				top: 60%;
+			}
+
+			&:nth-child(9),
+			&:nth-child(10){
+				top: 80%;
+			}
+		}
+	}
+
+	&.r10{
+		.symbol{
+			left: 25%;
+			top: 20%;
+
+			&:nth-child(3),
+			&:nth-child(6),
+			&:nth-child(8),
+			&:nth-child(11){
+				left: 75%;
+			}
+
+			&:nth-child(5),
+			&:nth-child(6){
+				top: 40%;
+			}
+
+			&:nth-child(4),
+			&:nth-child(9){
+				left: 50%;
+			}
+
+			&:nth-child(4){
+				top: 25%;
+			}
+
+			&:nth-child(9){
+				top: 75%;
+			}
+
+			&:nth-child(7),
+			&:nth-child(8){
+				top: 60%;
+			}
+
+			&:nth-child(10),
+			&:nth-child(11){
+				top: 80%;
+			}
+		}
 	}
 }
