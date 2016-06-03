@@ -23,16 +23,20 @@ class Pontoon extends Game
 		if @dealer.deck.length < @activePlayers() * 5
 			@dealer.deck.reshuffle()
 
-		for [0...2]
-			for player in @players
-				if not player.playingHand
-					player.hands.push(player.playingHand = new Hand())
+		for player in @players
+			if not player.playingHand
+				player.hands.push(player.playingHand = new Hand())
 
-				player.playingHand.addCard @dealer.deal()
+			player.playingHand.addCard @dealer.deal()
+			player.playingHand.addCard @dealer.deal()
 
-		for player in @players when player != @dealer
+		for player in @players
 
-			player.playingHand.show()
+			if player != @dealer
+				player.playingHand.show()
+			else
+				player.playingHand.cards[0].show()
+
 			for name, action of player.actions when action.canDo.call(player)
 				button = $('<button>').click(action.do.call(player)).text(name).appendTo(player.board)
 
@@ -42,9 +46,13 @@ class Pontoon extends Game
 
 	update: () ->
 		for player in @players
+			player.board.empty()
 			for hand in player.hands
+				handEle = $('<div>').addClass('hand' + if hand == player.playingHand then ' playing' else '')
 				for card in hand.cards
-					player.board.append( card.showen )
+					handEle.append( card.showen )
+
+				player.board.append(handEle)
 		return
 
 	@cardValue: (card) ->
