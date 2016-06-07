@@ -22,7 +22,9 @@ class Card
 			when $.isNumeric( @rank )
 				@element.append( $('<div>').addClass('number').text(@rank) )
 				for i in [0...(top = parseInt( @rank, 10 ))]
-					@element.append( $("<div>").addClass('symbol'+ if top/2 < i then ' flipped' else '') )
+					@element.append(
+						$("<div>").addClass('symbol'+ if top/2 < i then ' flipped' else '')
+					)
 				@element.append($('<div>').addClass('number flipped').text(@rank))
 			when @rank in ['Ace','Jack','Queen','King']
 				rankLetter = @rank.slice(0,1)

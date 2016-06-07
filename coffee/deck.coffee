@@ -1,5 +1,5 @@
 class Deck
-	constructor: (packs = 1,@jokers = false,@cardBack = $('<img src="img/cardBack.png">')) ->
+	constructor: (packs = 1,@jokers = false) ->
 		@cards = []
 		@discarded = []
 		for [0...packs]
