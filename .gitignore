@@ -52,3 +52,4 @@ javascript/*
 *.map
 *.css
 coffeelint.json
+*.sublime-workspace
